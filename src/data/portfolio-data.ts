@@ -19,9 +19,8 @@ export const services: Service[] = [
   { number: "01", title: "Administrative & Executive Support", summary: "Steady, detail-focused support for the work behind every productive day.", items: ["Calendar management", "Inbox management", "Scheduling", "Documents", "Research", "Follow-ups"] },
   { number: "02", title: "Customer & Client Support", summary: "Responsive communication that helps clients feel informed and looked after.", items: ["Customer communication", "Booking coordination", "Client follow-ups", "CRM updates", "Issue resolution"] },
   { number: "03", title: "Digital Operations", summary: "Hands-on support across websites, e-commerce, and everyday digital systems.", items: ["WordPress", "Elementor", "Shopify", "Website updates", "Digital systems", "Technical troubleshooting"] },
-  { number: "04", title: "CRM & Automation", summary: "Organized systems and practical workflows that reduce repetitive work.", items: ["GoHighLevel", "ManyChat", "Workflow automation", "Lead management", "Google Sheets integrations"] },
-  { number: "05", title: "Email & Marketing Support", summary: "End-to-end campaign assistance, from first draft through final send.", items: ["Email campaigns", "Copywriting", "Email layout", "ESP setup", "Scheduling", "Performance tracking"] },
-  { number: "06", title: "Social Media & Content", summary: "Reliable publishing support that keeps brand communication consistent.", items: ["Content publishing", "Canva graphics", "Social media management", "Content scheduling", "AI-assisted content production"] },
+  { number: "04", title: "CRM & Automation", summary: "Organized systems and practical workflows that reduce repetitive work.", items: ["GoHighLevel", "ManyChat", "CRM management", "Workflow support", "Google Sheets", "Process automation"] },
+  { number: "05", title: "Email & Marketing Support", summary: "End-to-end campaign assistance, from first draft through final send.", items: ["Email campaign support", "Copywriting", "Email design & layout", "ESP setup", "Scheduling", "Basic performance tracking"] },
 ];
 
 export const caseStudies: CaseStudy[] = [
@@ -45,5 +44,5 @@ export const toolGroups = [
   { category: "CRM & Automation", tools: ["GoHighLevel", "ManyChat", "CRM systems", "Google Sheets"] },
   { category: "Website & E-commerce", tools: ["WordPress", "Elementor", "Shopify", "Lovable"] },
   { category: "Marketing", tools: ["MailerLite", "Brevo", "Mailchimp", "Klaviyo"] },
-  { category: "AI", tools: ["AI-assisted content", "Research tools", "Workflow support"] },
+  { category: "AI", tools: ["AI-assisted research", "Writing support", "Workflow support"] },
 ];
