@@ -59,9 +59,9 @@ function BrandMark() {
 function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/80 bg-background/90 backdrop-blur-md">
-      <div className="mx-auto grid h-18 max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 lg:px-8">
+      <div className="mx-auto grid h-18 max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 lg:grid-cols-[auto_minmax(0,1fr)_auto] lg:px-8">
         <BrandMark />
-        <nav className="hidden items-center gap-7 lg:flex" aria-label="Main navigation">
+        <nav className="hidden items-center justify-self-center gap-7 lg:flex" aria-label="Main navigation">
           {navItems.map((item) => (
             <button key={item} type="button" onClick={() => scrollTo(item)} className="nav-link text-sm text-muted-foreground hover:text-foreground">{item}</button>
           ))}
@@ -324,7 +324,19 @@ function Recommendation() {
 function CopyButton({ value, label }: { value: string; label: string }) {
   const [copied, setCopied] = useState(false);
   async function copy() {
-    await navigator.clipboard.writeText(value);
+    try {
+      await navigator.clipboard.writeText(value);
+    } catch {
+      const field = document.createElement("textarea");
+      field.value = value;
+      field.setAttribute("readonly", "");
+      field.style.position = "fixed";
+      field.style.opacity = "0";
+      document.body.appendChild(field);
+      field.select();
+      document.execCommand("copy");
+      field.remove();
+    }
     setCopied(true);
     window.setTimeout(() => setCopied(false), 1600);
   }
