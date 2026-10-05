@@ -136,7 +136,7 @@ function Hero() {
                 <div className="size-48 overflow-hidden rounded-full border border-primary/25 bg-background/60 sm:size-56"><img src={portraitAsset.url} alt="Arwanda Nur Fatta Amalisa" className="size-full object-cover object-[center_30%]" /></div>
               </div>
               <div className="absolute inset-x-0 bottom-0 p-6">
-                <div className="border-t border-foreground/15 pt-5">
+                <div className="border-t border-foreground/15 pt-7">
                   <p className="font-display text-2xl font-semibold">Arwanda Nur Fatta Amalisa</p>
                   <p className="mt-1 text-sm text-muted-foreground">Virtual Assistant & Business Support Professional</p>
                 </div>
