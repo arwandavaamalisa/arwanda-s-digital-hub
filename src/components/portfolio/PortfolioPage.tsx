@@ -159,9 +159,9 @@ function Services() {
     <section id="services" className="scroll-mt-20 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading eyebrow="Services" title="How I can support your business" body="From keeping daily operations organized to managing digital systems and customer communication, I provide flexible support across the tasks that keep a business running." />
-        <div className="mt-16 grid border-t border-border md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid border-t border-border md:grid-cols-2 lg:grid-cols-6">
           {services.map((service) => (
-            <article key={service.number} className="service-card group border-b border-border p-7 md:odd:border-r lg:border-r lg:nth-[3n]:border-r-0">
+            <article key={service.number} className="service-card group border-b border-border p-7 md:odd:border-r md:last:col-span-2 md:last:border-r-0 lg:col-span-2 lg:border-r lg:odd:border-r lg:nth-[3]:border-r-0 lg:nth-[4]:col-span-3 lg:last:col-span-3 lg:last:border-r-0">
               <div className="flex items-start justify-between"><span className="text-xs font-semibold text-primary">{service.number}</span><ArrowDownRight className="size-5 text-muted-foreground transition-transform group-hover:rotate-[-45deg] group-hover:text-primary" /></div>
               <h3 className="mt-12 font-display text-2xl font-semibold">{service.title}</h3>
               <p className="mt-4 text-sm leading-6 text-muted-foreground">{service.summary}</p>
