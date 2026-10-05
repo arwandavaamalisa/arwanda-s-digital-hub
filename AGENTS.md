@@ -8,3 +8,8 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+## Project architecture
+
+- Keep portfolio copy and professional records in `src/data` and render them through focused portfolio components so content stays maintainable.
+- Keep the contact experience frontend-only with a mailto handoff until a delivery service is explicitly requested.
