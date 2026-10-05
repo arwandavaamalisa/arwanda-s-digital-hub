@@ -133,11 +133,11 @@ function Hero() {
             <div className="portrait-panel relative flex aspect-[7/10] flex-col overflow-hidden rounded-[2rem] border border-border bg-secondary sm:aspect-[4/5]">
               <div className="absolute inset-x-0 top-0 flex items-center justify-between p-6 text-xs uppercase tracking-[0.16em] text-muted-foreground"><span>Personal brand</span><span>2026</span></div>
               <div className="flex min-h-0 flex-1 items-end justify-center px-6 pb-4 pt-12">
-                <div className="aspect-square h-full max-h-48 w-auto overflow-hidden rounded-full border border-primary/25 bg-background/60 sm:max-h-56"><img src={portraitAsset.url} alt="Arwanda Nur Fatta Amalisa" className="size-full object-cover object-[center_30%]" /></div>
+                <div className="aspect-square h-full max-h-56 w-auto overflow-hidden rounded-full border border-primary/25 bg-background/60 sm:max-h-[16.5rem]"><img src={portraitAsset.url} alt="Arwanda Nur Fatta Amalisa" className="size-full object-cover object-[center_30%]" /></div>
               </div>
               <div className="relative p-6 pb-4 sm:pb-6">
                 <div className="border-t border-foreground/15 pt-5 sm:pt-7">
-                  <p className="font-display text-2xl font-semibold">Arwanda Nur Fatta Amalisa</p>
+                  <p className="font-display text-[1.3rem] font-semibold whitespace-nowrap sm:text-2xl">Arwanda Nur Fatta Amalisa</p>
                   <p className="mt-1 text-sm text-muted-foreground">Virtual Assistant &amp; Business Support Professional</p>
                 </div>
               </div>
