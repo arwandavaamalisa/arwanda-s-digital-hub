@@ -38,6 +38,7 @@ import {
 } from "@/components/ui/sheet";
 import { Textarea } from "@/components/ui/textarea";
 import { caseStudies, experiences, services, toolGroups, type CaseStudy } from "@/data/portfolio-data";
+import portraitAsset from "@/assets/arwanda-portrait.jpg.asset.json";
 
 const navItems = ["Home", "About", "Services", "Work", "Experience", "Contact"];
 const emailPlatforms = ["MailerLite", "Brevo", "Mailchimp", "Klaviyo", "GoHighLevel"];
@@ -132,7 +133,7 @@ function Hero() {
             <div className="portrait-panel relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-border bg-secondary">
               <div className="absolute inset-x-0 top-0 flex items-center justify-between p-6 text-xs uppercase tracking-[0.16em] text-muted-foreground"><span>Personal brand</span><span>2026</span></div>
               <div className="absolute inset-0 grid place-items-center">
-                <div className="grid size-48 place-items-center rounded-full border border-primary/25 bg-background/60 font-display text-6xl font-semibold text-primary sm:size-56">AA</div>
+                <div className="size-48 overflow-hidden rounded-full border border-primary/25 bg-background/60 sm:size-56"><img src={portraitAsset.url} alt="Arwanda Nur Fatta Amalisa" className="size-full object-cover object-[center_30%]" /></div>
               </div>
               <div className="absolute inset-x-0 bottom-0 p-6">
                 <div className="border-t border-foreground/15 pt-5">
