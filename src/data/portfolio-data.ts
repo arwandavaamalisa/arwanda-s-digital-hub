@@ -1,3 +1,11 @@
+import manyChatSkinQuiz from "@/assets/manychat-skin-quiz.png.asset.json";
+
+export type WorkSample = {
+  label: string;
+  caption: string;
+  image: string;
+};
+
 export type Service = {
   number: string;
   title: string;
@@ -13,6 +21,7 @@ export type CaseStudy = {
   scope: string;
   work: string[];
   tools: string[];
+  workSample?: WorkSample;
 };
 
 export const services: Service[] = [
