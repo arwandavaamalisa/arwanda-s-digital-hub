@@ -44,5 +44,5 @@ export const toolGroups = [
   { category: "CRM & Automation", tools: ["GoHighLevel", "ManyChat", "CRM systems", "Google Sheets"] },
   { category: "Website & E-commerce", tools: ["WordPress", "Elementor", "Shopify", "Lovable"] },
   { category: "Marketing", tools: ["MailerLite", "Brevo", "Mailchimp", "Klaviyo"] },
-  { category: "AI", tools: ["AI-assisted content", "Research tools", "Workflow support"] },
+  { category: "AI", tools: ["AI-assisted research", "Writing support", "Workflow support"] },
 ];
