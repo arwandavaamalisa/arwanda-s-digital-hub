@@ -190,6 +190,28 @@ function CaseStudyDialog({ project }: { project: CaseStudy }) {
         </div>
         <div className="mt-6"><h4 className="font-display text-xl font-semibold">Key work</h4><ul className="mt-4 space-y-3">{project.work.map((item) => <li key={item} className="flex gap-3 text-sm leading-6 text-muted-foreground"><Check className="mt-1 size-4 shrink-0 text-primary" />{item}</li>)}</ul></div>
         <div className="mt-8"><h4 className="font-display text-xl font-semibold">Tools</h4><div className="mt-3 flex flex-wrap gap-2">{project.tools.map((tool) => <span key={tool} className="rounded-full bg-secondary px-3 py-1.5 text-xs">{tool}</span>)}</div></div>
+        {project.workSample ? (
+          <div className="mt-8">
+            <h4 className="font-display text-xl font-semibold">Work Sample</h4>
+            <p className="mt-1 text-sm font-medium text-primary">{project.workSample.label}</p>
+            <p className="mt-3 text-sm leading-6 text-muted-foreground">{project.workSample.caption}</p>
+            <Dialog>
+              <DialogTrigger asChild>
+                <button type="button" className="feedback-tile mt-4 block w-full cursor-zoom-in rounded-xl border border-border bg-secondary p-3 transition-colors hover:border-primary/30" aria-label={`View larger: ${project.workSample.label}`}>
+                  <img src={project.workSample.image} alt={`${project.workSample.label} — ${project.client}`} loading="lazy" className="mx-auto max-h-[420px] w-auto rounded-lg object-contain" />
+                </button>
+              </DialogTrigger>
+              <DialogContent className="max-h-[90vh] max-w-3xl overflow-y-auto rounded-2xl border-border p-5 sm:p-7">
+                <DialogHeader className="text-left">
+                  <DialogTitle className="font-display text-2xl">{project.workSample.label}</DialogTitle>
+                  <DialogDescription>{project.workSample.caption}</DialogDescription>
+                </DialogHeader>
+                <img src={project.workSample.image} alt={`${project.workSample.label} — ${project.client}`} className="mt-2 w-full rounded-xl border border-border" />
+              </DialogContent>
+            </Dialog>
+            <p className="mt-2 text-center text-xs text-muted-foreground">Click the image to view it larger</p>
+          </div>
+        ) : null}
       </DialogContent>
     </Dialog>
   );
